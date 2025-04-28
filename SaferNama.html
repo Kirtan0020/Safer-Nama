@@ -32,13 +32,24 @@
         </div>
   
     <!-- Center - Logo -->
-    <div class="absolute  skew-x-[-20deg] left-1/2  text-2xl font-bold text-gray-800 dark:text-white">
-      Logo
+    <div class="absolute skew-x-[-20deg] left-1/2 transform -translate-x-1/2">
+      <img 
+        src="Image/Light mode Logo.png" 
+        class="block dark:hidden w-12" 
+        alt="Logo Light"
+      />
+      <img 
+        src="Image/Dark mode Logo.png" 
+        class="hidden dark:block w-12" 
+        alt="Logo Dark"
+      />
     </div>
+    
+    
   
     <!-- Right Side - Button + Toggle -->
     <div class="flex items-center  skew-x-[-20deg]  gap-4">
-      <button class="px-4 py-2 bg-blue-600 text-white rounded-xl skew-x-[10deg] hover:bg-blue-700 transition">Get Started</button>
+      <button class="px-4 py-2 bg-blue-600 text-white rounded-xl skew-x-[5deg] hover:bg-blue-700 transition">Get Started</button>
       <!-- Dark Mode Toggle -->
       <button onclick="document.documentElement.classList.toggle('dark')" class="w-10 h-10 flex items-center    justify-center bg-gray-300 dark:bg-gray-600 rounded-xl skew-x-[10deg] transition">
         🌙
@@ -72,12 +83,52 @@
       <!-- Right Image (Parallelogram Style) -->
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 relative group">
         <div class="  skew-x-[-10deg] overflow-hidden rounded-2xl shadow-2xl hover:scale-105 transition duration-500">
-          <img class="object-cover object-center w-full h-[500px] w-[300px]" alt="hero" src="https://images.unsplash.com/photo-1502791451862-7bd8c1df43a7?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+          <img class="object-cover object-center w-full h-[500px] w-[300px]" alt="hero" src="Image/Photo 1.avif" />
         </div>
       </div>
   
     </div>
-  </section>
-  
+  </section> 
+
+    <!-- about us section -->
+    <section>
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
+        <p class="text-gray-600 text-lg mb-8">
+          Hum safar ke junoon ko naye andaaz mein jeene waalon ke liye ek platform hain. 
+          Hamara mission hai duniya bhar ke logon ko ek unforgettable travel experience dena.
+        </p>
+      </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5">
+          <div class="bg-white p-6  rounded-2xl shadow-md hover:scale-105 transform transition">
+            <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Our Mission</h3>
+            <p class="text-gray-600">
+              Har traveler ko unke sapno ka safar plan karne mein madad karna, bina kisi dikkat ke.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+            <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Our Vision</h3>
+            <p class="text-gray-600">
+              Travel ko har kisi ke liye accessible aur memorable banana, technology aur creativity se.
+            </p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+            <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Our Values</h3>
+            <p class="text-gray-600">
+              Trust, passion, aur innovation ke saath hum har roz kuch naya seekhne aur dene mein vishwas karte hain.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gellary Section -->
+    <section class="max-w-6xl mx-auto mt-10 px-5 py-10">
+      <!-- Title -->
+      <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-8">Gallery</h2>
+    
+      <!-- Travel Categories Buttons -->
+      
 </body>
 </html>
