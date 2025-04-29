@@ -16,21 +16,22 @@
          
       </style>
 </head>
-<body class="h-[200vh] bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
+<body class=" scroll-smooth h-[520vh] bg-gradient-to-br from-blue-100 to-purple-200 dark:from-gray-900 dark:to-gray-800 transition-colors duration-500">
 
 <!-- Navbar Section -->
-<nav class="sticky  skew-x-[20deg] rounded-xl top-5 mx-auto w-11/12 max-w-6xl backdrop-blur-md bg-white/30 dark:bg-gray-700/30 shadow-lg px-6 py-3 flex items-center justify-between z-20">
+<nav class="sticky  skew-x-[20deg] rounded-xl top-5 mx-auto w-11/12 max-w-6xl  backdrop-blur-md bg-white/30 dark:bg-gray-700/30 shadow-lg px-6 py-3 flex items-center justify-between z-20">
     <!-- Left Side - Menu -->
      <div class=" skew-x-[-20deg]">
 
-         <ul class="flex   gap-6 text-gray-800 dark:text-white font-semibold decoration-none">
-             <li><a href="#home" class="hover:text-gray-500">Home</a></li>
-             <li><a href="#about" class="hover:text-gray-500">About</a></li>
-             <li><a href="#services" class="hover:text-gray-500">Services</a></li>
-             <li><a href="#contact" class="hover:text-gray-500 ">Contact</a></li>
-            </ul>
-        </div>
-  
+<!-- Navbar Menu -->
+<ul class="flex gap-6 text-gray-800 dark:text-white font-semibold">
+  <li><a href="#home" class="hover:text-gray-500">Home</a></li>
+  <li><a href="#about" class="hover:text-gray-500">About</a></li>
+  <li><a href="#services" class="hover:text-gray-500">Services</a></li>
+  <li><a href="#gallery" class="hover:text-gray-500">Gallery</a></li>
+  <li><a href="#contact" class="hover:text-gray-500">Contact</a></li>
+</ul>
+</div>
     <!-- Center - Logo -->
     <div class="absolute skew-x-[-20deg] left-1/2 transform -translate-x-1/2">
       <img 
@@ -58,7 +59,7 @@
 
     </nav>
 <!-- Hero Section -->
-<section class=" max-w-6xl  mx-auto mt-10 px-5 py-10 ">
+<section id="home" class="max-w-6xl mx-auto mt-10 px-5 py-10">
     <div class="container mx-auto flex px-5 md:flex-row flex-col items-center">
       
       <!-- Left Content -->
@@ -82,7 +83,7 @@
   
       <!-- Right Image (Parallelogram Style) -->
       <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 relative group">
-        <div class="  skew-x-[-10deg] overflow-hidden rounded-2xl shadow-2xl hover:scale-105 transition duration-500">
+        <div class="skew-x-[-10deg] overflow-hidden rounded-2xl shadow-2xl hover:scale-105 transition duration-500">
           <img class="object-cover object-center w-full h-[500px] w-[300px]" alt="hero" src="Image/Photo 1.avif" />
         </div>
       </div>
@@ -91,7 +92,7 @@
   </section> 
 
     <!-- about us section -->
-    <section>
+    <section id="about">
       <div class="max-w-6xl mx-auto text-center">
         <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
         <h2 class="text-4xl font-bold text-gray-800 mb-4">About Us</h2>
@@ -100,7 +101,7 @@
           Hamara mission hai duniya bhar ke logon ko ek unforgettable travel experience dena.
         </p>
       </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-5 ">
           <div class="bg-white p-6  rounded-2xl shadow-md hover:scale-105 transform transition">
             <h3 class="text-2xl font-semibold mb-2 text-indigo-600">Our Mission</h3>
             <p class="text-gray-600">
@@ -123,12 +124,233 @@
       </div>
     </section>
 
-    <!-- Gellary Section -->
-    <section class="max-w-6xl mx-auto mt-10 px-5 py-10">
-      <!-- Title -->
-      <h2 class="text-4xl font-bold text-center text-gray-800 dark:text-white mb-8">Gallery</h2>
+
+    <!-- Services Section -->
+<section id="services" class="max-w-6xl mx-auto mt-10 px-5 py-10">
+  <!-- Title -->
+  <div class="max-w-6xl mx-auto text-center">
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Services</h2>
+      <p class="text-gray-600 text-lg mt-4">
+        Hum aapko travel ka ek naye andaaz mein anubhav karwane ke liye kuch khaas services offer karte hain!
+      </p>
+    </div>
+  </div>
+
+  <!-- Services Cards -->
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
     
-      <!-- Travel Categories Buttons -->
+    <!-- Travel Packages -->
+    <div class="bg-white p-6 rounded-2xl shadow-md transform hover:scale-105 transition">
+      <div class="flex items-center justify-center mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" alt="Travel Packages" class="w-16 h-16">
+      </div>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Travel Packages</h3>
+      <p class="text-gray-600">
+        Humein apni pasand batayein, aur hum aapke liye best destinations aur deals choose karenge!
+      </p>
+    </div>
+
+    <!-- Custom Trip Planning -->
+    <div class="bg-white p-6 rounded-2xl shadow-md transform hover:scale-105 transition">
+      <div class="flex items-center justify-center mb-4">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Custom Trip" class="w-16 h-16">
+      </div>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Custom Trip Planning</h3>
+      <p class="text-gray-600">
+        Aapki zarooraton ke mutabiq fully personalized safar banayein - apke budget aur interests ke hisaab se.
+      </p>
+    </div>
+
+    <!-- Visa Support -->
+    <div class="bg-white p-6 rounded-2xl shadow-md transform hover:scale-105 transition">
+      <div class="flex items-center justify-center mb-4">
+        <img src="Image/customer-service_18308911.png" alt="Visa Support" class="w-16 h-16">
+      </div>
+      <h3 class="text-2xl font-semibold text-indigo-600 mb-2">Visa Support</h3>
+      <p class="text-gray-600">
+        Visa process ab bilkul aasan! Hamari expert team aapko har step mein madad karegi, hassle-free approvals ke saath.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Gellary Section -->
+    <section id="gallery" class="max-w-6xl mx-auto mt-10 px-5 py-10">
+      <!-- Title -->
+      <div class="max-w-6xl mx-auto text-center">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Gallery</h2>
+      </div>
+    
+<!-- Travel Categories Buttons with Real Background Images -->
+<!-- Travel Categories Buttons -->
+<div class="flex flex-wrap justify-center items-center gap-4 py-8">
+
+  <!-- All Destinations -->
+  <button onclick="filterGallery('all')" type="button" class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb" class="w-12 h-12 object-cover" alt="All Destinations">
+    <span class="px-4 text-gray-800 font-semibold">All Destinations</span>
+  </button>
+
+  <!-- Beaches -->
+  <button onclick="filterGallery('beaches')" type="button" class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="w-12 h-12 object-cover" alt="Beaches">
+    <span class="px-4 text-gray-800 font-semibold">Beaches</span>
+  </button>
+
+  <!-- Mountains -->
+  <button onclick="filterGallery('mountains')" type="button" class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" class="w-12 h-12 object-cover" alt="Mountains">
+    <span class="px-4 text-gray-800 font-semibold">Mountains</span>
+  </button>
+
+  <!-- Cities -->
+  <button onclick="filterGallery('cities')" type="button" class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156" class="w-12 h-12 object-cover" alt="Cities">
+    <span class="px-4 text-gray-800 font-semibold">Cities</span>
+  </button>
+
+  <!-- Adventure -->
+  <button onclick="filterGallery('adventure')" type="button" class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" class="w-12 h-12 object-cover" alt="Adventure">
+    <span class="px-4 text-gray-800 font-semibold">Adventure</span>
+  </button>
+
+  <!-- Historical -->
+  <button onclick="filterGallery('historical')" type="button" class="flex items-center bg-white border border-gray-300 rounded-full overflow-hidden shadow-md hover:shadow-lg transition-all duration-300">
+    <img src="Image/Photos/Historical/constantinos-kollias-nESI7TqYBto-unsplash.jpg" class="w-12 h-12 object-cover" alt="Historical">
+    <span class="px-4 text-gray-800 font-semibold">Historical</span>
+  </button>
+
+</div>
+
+<!-- Image Gallery -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-4" id="gallery">
+
+  <!-- Beaches -->
+  <div class="beaches gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Beaches/keith-luke-sPU2kzPIf28-unsplash.jpg" alt="Beach">
+  </div>
+  <div class="beaches gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Beaches/ishan-seefromthesky-rj8fMHNPXbg-unsplash.jpg" alt="Beach">
+  </div>
+
+  <!-- Mountains -->
+  <div class="mountains gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Mountains/kalen-emsley-Bkci_8qcdvQ-unsplash.jpg" alt="Mountain">
+  </div>
+  <div class="mountains gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Mountains/rohit-tandon-9wg5jCEPBsw-unsplash.jpg" alt="Mountain">
+  </div>
+
+  <!-- Cities -->
+  <div class="cities gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Cities/clement-falize-9uNFBOXBEBc-unsplash.jpg" alt="City">
+  </div>
+  <div class="cities gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Cities/pedro-lastra-Nyvq2juw4_o-unsplash.jpg" alt="City">
+  </div>
+
+  <!-- Adventure -->
+  <div class="adventure gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Adventure/benjamin-davies-mqN-EV9rNlY-unsplash.jpg" alt="Adventure">
+  </div>
+  <div class="adventure gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Adventure/holly-mandarich-UVyOfX3v0Ls-unsplash.jpg" alt="Adventure">
+  </div>
+
+  <!-- Historical -->
+  <div class="historical gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Historical/brandon-mowinkel-PSY_KuMcTJU-unsplash.jpg" alt="Historical">
+  </div>
+  <div class="historical gallery-item">
+      <img class="h-auto max-w-full rounded-lg transform skew-x-[-5deg] transition-all duration-500" src="Image/Photos/Historical/constantinos-kollias-nESI7TqYBto-unsplash.jpg" alt="Historical">
+  </div>
+
+</div>
+
+<!-- Gallery Filter Script -->
+<script>
+  function filterGallery(category) {
+    const allItems = document.querySelectorAll('.gallery-item');
+    allItems.forEach(item => {
+      item.style.display = 'none'; // hide all items
+    });
+    
+    if (category === 'all') {
+      const allCategories = document.querySelectorAll('.gallery-item');
+      allCategories.forEach(item => {
+        item.style.display = 'block'; // show all items
+      });
+    } else {
+      const categoryItems = document.querySelectorAll(`.${category}.gallery-item`);
+      categoryItems.forEach(item => {
+        item.style.display = 'block'; // show items for selected category
+      });
+    }
+  }
+</script>
+
+
+<!-- Contect us -->
+<section id="contact" class="max-w-6xl mx-auto mt-20 px-5 py-10">
+  <div class="bg-black p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+  <div class="max-w-6xl mx-auto text-center">
+    <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+      <h2 class="text-4xl font-bold text-center mb-10">Contact Us</h2>
+    </div>
+</div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 top-5 mt-10">
+    <!-- Contact Form -->
+    <form class="space-y-6">
+      <div>
+         <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+        <label class="block mb-2 text-sm font-medium">Name</label>
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      </div>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+        <label class="block mb-2 text-sm font-medium">Email</label>
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+      </div>
+      <div class="bg-white p-6 rounded-2xl shadow-md hover:scale-105 transform transition">
+        <label class="block mb-2 text-sm font-medium">Message</label>
+        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+      </div>
+      <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 transition">Send Message</button>
+    </form>
+    
+
+    <!-- Map and Contact Info -->
+    <div class="space-y-6">
       
-</body>
+      <!-- Google Map Embed -->
+      <div class="w-full h-64 rounded-2xl overflow-hidden shadow-md hover:scale-105 transform transition">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.086909932102!2d-122.41941508468177!3d37.77492927975824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f1b5cf7d5%3A0x805c6d6e2e70d3a5!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1619478420650!5m2!1sen!2sus"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="text-white dark:text-white">
+        <p><strong>Address:</strong> 123 Travel Street, City Name, Country</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Email:</strong> info@travelwebsite.com</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-6 mt-10">
+  <div class="max-w-6xl mx-auto text-center">
+    <p>&copy; 2023 Safer Nama. All rights reserved.</p>
+  </div>
+
+<body>
 </html>
